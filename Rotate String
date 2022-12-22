@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    String str="Deepak";
+	    char[] ch=str.toCharArray();
+	    int len=ch.length;
+	    for(int j=1;j<=3;j++){
+	        char last=ch[len-1];
+	       for(int i=len-1;i>0;i--){
+	          ch[i]=ch[i-1];
+	        }
+	    ch[0]=last;
+	    }
+	    String s1=String.valueOf(ch);
+	    System.out.println(s1);
+	}
+}
